@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Handle GET request to fetch users
-app.get('/users', async (req, res) => {
+app.get('/users', async (req, res) => {   //call back functions
     setTimeout(async () => {
         const limit = +req.query.limit || 10;  //+req.query.limit controls he number of users being returned
 
